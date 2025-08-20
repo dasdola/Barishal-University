@@ -6,75 +6,110 @@
   <title>Research - University of Barishal CSE</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
 
   <!-- Navbar -->
-  <header class="bg-blue-900 text-white shadow-lg">
+  <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">University of Barishal - CSE</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
-          <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
-          <li><a href="faculty.html" class="hover:text-yellow-300">Faculty</a></li>
-          <li><a href="programs.html" class="hover:text-yellow-300">Programs</a></li>
-          <li><a href="research.html" class="hover:text-yellow-300 font-bold underline">Research</a></li>
-          <li><a href="students.html" class="hover:text-yellow-300">Students</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-300">Contact Us</a></li>
+      <h1 class="text-xl md:text-2xl font-bold">University of Barishal - CSE</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex">
+        <ul class="flex space-x-6 text-sm md:text-base">
+          <li><a href="index.html" class="hover:text-yellow-300 transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-300 transition-colors">About Us</a></li>
+          <li><a href="faculty.html" class="hover:text-yellow-300 transition-colors">Faculty</a></li>
+          <li><a href="programs.html" class="hover:text-yellow-300 transition-colors">Programs</a></li>
+          <li><a href="research.html" class="hover:text-yellow-300 font-bold underline transition-colors">Research</a></li>
+          <li><a href="students.html" class="hover:text-yellow-300 transition-colors">Students</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-300 transition-colors">Contact Us</a></li>
         </ul>
       </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" class="md:hidden p-2 rounded-md bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-900">
+      <ul class="flex flex-col text-center space-y-2 py-4">
+        <li><a href="index.html" class="block hover:text-yellow-300 transition-colors">Home</a></li>
+        <li><a href="about.html" class="block hover:text-yellow-300 transition-colors">About Us</a></li>
+        <li><a href="faculty.html" class="block hover:text-yellow-300 transition-colors">Faculty</a></li>
+        <li><a href="programs.html" class="block hover:text-yellow-300 transition-colors">Programs</a></li>
+        <li><a href="research.html" class="block hover:text-yellow-300 font-bold underline transition-colors">Research</a></li>
+        <li><a href="students.html" class="block hover:text-yellow-300 transition-colors">Students</a></li>
+        <li><a href="contact.html" class="block hover:text-yellow-300 transition-colors">Contact Us</a></li>
+      </ul>
     </div>
   </header>
 
   <!-- Research Section -->
-  <section class="py-16 container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Research Areas</h2>
+  <main class="flex-grow">
+    <section class="py-16 container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Research Areas</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      <!-- AI Card -->
-      <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
-        <div class="text-5xl mb-4 text-center">🤖</div>
-        <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Artificial Intelligence</h3>
-        <p class="text-gray-700 text-center">
-          Research on AI, machine learning, and deep learning to develop intelligent systems and solve real-world problems.
-        </p>
+        <!-- AI Card -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <div class="text-5xl mb-4 text-center">🤖</div>
+          <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Artificial Intelligence</h3>
+          <p class="text-gray-700 text-center">
+            Research on AI, machine learning, and deep learning to develop intelligent systems and solve real-world problems.
+          </p>
+        </div>
+
+        <!-- Cybersecurity Card -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <div class="text-5xl mb-4 text-center">🛡</div>
+          <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Cybersecurity</h3>
+          <p class="text-gray-700 text-center">
+            Exploring secure communication, ethical hacking, malware analysis, and protecting critical infrastructures.
+          </p>
+        </div>
+
+        <!-- Software Engineering Card -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <div class="text-5xl mb-4 text-center">💻</div>
+          <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Software Engineering</h3>
+          <p class="text-gray-700 text-center">
+            Focus on software design, development, testing, and quality assurance methodologies for real-world applications.
+          </p>
+        </div>
+
+        <!-- Data Science Card -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <div class="text-5xl mb-4 text-center">📊</div>
+          <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Data Science</h3>
+          <p class="text-gray-700 text-center">
+            Working with big data, predictive analytics, visualization, and data-driven decision-making techniques.
+          </p>
+        </div>
+
       </div>
-
-      <!-- Cybersecurity Card -->
-      <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
-        <div class="text-5xl mb-4 text-center">🛡</div>
-        <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Cybersecurity</h3>
-        <p class="text-gray-700 text-center">
-          Exploring secure communication, ethical hacking, malware analysis, and protecting critical infrastructures.
-        </p>
-      </div>
-
-      <!-- Software Engineering Card -->
-      <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
-        <div class="text-5xl mb-4 text-center">💻</div>
-        <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Software Engineering</h3>
-        <p class="text-gray-700 text-center">
-          Focus on software design, development, testing, and quality assurance methodologies for real-world applications.
-        </p>
-      </div>
-
-      <!-- Data Science Card -->
-      <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
-        <div class="text-5xl mb-4 text-center">📊</div>
-        <h3 class="text-xl font-bold mb-2 text-center text-blue-900">Data Science</h3>
-        <p class="text-gray-700 text-center">
-          Working with big data, predictive analytics, visualization, and data-driven decision-making techniques.
-        </p>
-      </div>
-
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6 text-center">
     <p>&copy; 2025 University of Barishal - CSE Department. All rights reserved.</p>
   </footer>
 
+  <!-- JS -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(menuBtn){
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
 </body>
 </html>
