@@ -20,39 +20,62 @@
           <li><a href="programs.html" class="hover:text-yellow-300">Programs</a></li>
           <li><a href="research.html" class="hover:text-yellow-300">Research</a></li>
           <li><a href="students.html" class="hover:text-yellow-300">Students</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-300">Contact Us</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-300 font-bold underline">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Contact Section -->
-  <section class="py-12 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <div class="bg-white shadow-lg p-6 rounded-lg">
-        <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
-        <p class="text-gray-700 mb-2"><strong>Address:</strong> University of Barishal, CSE Department, Barishal, Bangladesh</p>
-        <p class="text-gray-700 mb-2"><strong>Email:</strong> cse@bu.ac.bd</p>
-        <p class="text-gray-700"><strong>Phone:</strong> +880-123-456-789</p>
+  <section class="py-16 container mx-auto px-6 relative">
+    <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Contact Us</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Info Card -->
+      <div class="bg-white shadow-2xl p-8 rounded-2xl relative overflow-hidden">
+        <!-- Decorative Circle -->
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-100 rounded-full opacity-50"></div>
+        <h3 class="text-2xl font-bold mb-6 text-blue-900">Get in Touch</h3>
+        <p class="text-gray-700 mb-4 flex items-center">
+          <span class="mr-2 text-blue-500 text-xl">📍</span>
+          University of Barishal, CSE Department, Barishal, Bangladesh
+        </p>
+        <p class="text-gray-700 mb-4 flex items-center">
+          <span class="mr-2 text-blue-500 text-xl">✉️</span>
+          cse@bu.ac.bd
+        </p>
+        <p class="text-gray-700 flex items-center">
+          <span class="mr-2 text-blue-500 text-xl">📞</span>
+          +880-123-456-789
+        </p>
       </div>
 
-      <div class="bg-white shadow-lg p-6 rounded-lg">
-        <h3 class="text-xl font-bold mb-4">Send a Message</h3>
+      <!-- Contact Form -->
+      <div class="bg-white shadow-2xl p-8 rounded-2xl relative overflow-hidden">
+        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-100 rounded-full opacity-50"></div>
+        <h3 class="text-2xl font-bold mb-6 text-blue-900">Send a Message</h3>
         <form class="space-y-4">
-          <input type="text" placeholder="Your Name" class="w-full border p-2 rounded">
-          <input type="email" placeholder="Your Email" class="w-full border p-2 rounded">
-          <textarea placeholder="Your Message" class="w-full border p-2 rounded h-32"></textarea>
-          <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+          <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <textarea placeholder="Your Message" class="w-full border border-gray-300 p-3 rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <button class="w-full bg-gradient-to-r from-blue-600 to-blue-900 text-white font-semibold px-4 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition">
+            Send Message
+          </button>
         </form>
       </div>
-      
+    </div>
+
+    <!-- Map -->
+    <div class="mt-16 shadow-lg rounded-2xl overflow-hidden">
+      <iframe class="w-full h-96" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14612.93644298882!2d90.3986!3d22.7015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzMwLjAiTiA5MMKwMjMnMTMuOCJF!5e0!3m2!1sen!2sbd!4v1692523112345!5m2!1sen!2sbd" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center">
+  <footer class="bg-blue-900 text-white py-6 text-center mt-12">
     <p>&copy; 2025 University of Barishal - CSE Department. All rights reserved.</p>
   </footer>
 

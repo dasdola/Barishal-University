@@ -27,14 +27,14 @@
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="md:hidden px-3 py-2 border rounded-lg hover:bg-blue-800">
-        ☰
-      </button>
-
-      <!-- Dark Mode Toggle -->
-      <button id="darkModeBtn" class="ml-4 px-3 py-1 bg-yellow-400 text-black rounded-lg hover:bg-yellow-300">
-        🌙 Dark
-      </button>
+      <div class="flex items-center">
+        <button id="menuBtn" class="md:hidden px-3 py-2 border rounded-lg hover:bg-blue-800">
+          ☰
+        </button>
+        <button id="darkModeBtn" class="ml-2 px-3 py-1 bg-yellow-400 text-black rounded-lg hover:bg-yellow-300">
+          🌙 Dark
+        </button>
+      </div>
     </div>
 
     <!-- Mobile Accordion Menu -->
@@ -55,68 +55,116 @@
   <section 
     class="h-screen bg-cover bg-center flex items-center justify-center text-center relative" 
     style="background-image: url('https://bu.ac.bd/images/bu/385440995_786835713450838_1581342109887070293_n.jpg');">
-    
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-
     <div class="relative z-10 text-white px-6">
-      <h2 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Department of Computer Science & Engineering</h2>
-      <p id="typewriter" class="text-lg md:text-xl max-w-2xl mx-auto mb-6 h-6"></p>
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Department of Computer Science & Engineering</h2>
+      <p id="typewriter" class="text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-6 h-6"></p>
       <a href="about.html" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition">
         Learn More
       </a>
     </div>
   </section>
 
-  <!-- Faculty Spotlight (Carousel) -->
+  <!-- Programs Summary -->
   <section class="py-12 bg-gray-100">
-  <div class="container mx-auto text-center mb-8">
-    <h3 class="text-3xl font-bold">Faculty Spotlight</h3>
-  </div>
-  <div class="relative container mx-auto overflow-hidden">
-    <div id="carousel" class="flex transition-transform duration-500">
-      <div class="min-w-full p-6 text-center">
-        <img src="https://bu.ac.bd/webform/user_images/167271.jpg" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
-        <h4 class="font-bold text-lg">Dr. Rahat Hossain Faisal</h4>
-        <p class="text-gray-600">Associate Professor & Chairman</p>
+    <div class="container mx-auto text-center mb-10">
+      <h3 class="text-3xl font-bold">Programs Offered</h3>
+      <p class="text-gray-700 mt-2 max-w-2xl mx-auto">We offer undergraduate, graduate and research programs to prepare skilled professionals and innovators.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 container mx-auto px-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-bold text-xl mb-2">B.Sc. in CSE</h4>
+        <p class="text-gray-600">4-year undergraduate program focusing on programming, algorithms, and software development.</p>
       </div>
-      <div class="min-w-full p-6 text-center">
-        <img src="https://bu.ac.bd/webform/user_images/445989.jpg" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
-        <h4 class="font-bold text-lg">Md Samsuddoha</h4>
-        <p class="text-gray-600">Assistant Professor</p>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-bold text-xl mb-2">M.Sc. in CSE</h4>
+        <p class="text-gray-600">Graduate program emphasizing AI, machine learning, and advanced computing techniques.</p>
       </div>
-      <div class="min-w-full p-6 text-center">
-        <img src="https://bu.ac.bd/webform/user_images/991732.jpg" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
-        <h4 class="font-bold text-lg">Dr. Md Manjur Ahmed</h4>
-        <p class="text-gray-600">Associate Professor</p>
-      </div>
-      <div class="min-w-full p-6 text-center">
-        <img src="https://bu.ac.bd/webform/user_images/861980.png" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
-        <h4 class="font-bold text-lg">Dr. Tania Islam</h4>
-        <p class="text-gray-600">Assistant Professor</p>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-bold text-xl mb-2">Ph.D. in CSE</h4>
+        <p class="text-gray-600">Doctoral research to foster innovation and contribute to global research in computing.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Faculty Carousel -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center mb-8">
+      <h3 class="text-3xl font-bold">Faculty Spotlight</h3>
+    </div>
+    <div class="relative container mx-auto overflow-hidden">
+      <div id="carousel" class="flex transition-transform duration-500">
+        <div class="min-w-full p-6 text-center">
+          <img src="https://bu.ac.bd/webform/user_images/167271.jpg" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
+          <h4 class="font-bold text-lg">Dr. Rahat Hossain Faisal</h4>
+          <p class="text-gray-600">Associate Professor & Chairman</p>
+        </div>
+        <div class="min-w-full p-6 text-center">
+          <img src="https://bu.ac.bd/webform/user_images/445989.jpg" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
+          <h4 class="font-bold text-lg">Md Samsuddoha</h4>
+          <p class="text-gray-600">Assistant Professor</p>
+        </div>
+        <div class="min-w-full p-6 text-center">
+          <img src="https://bu.ac.bd/webform/user_images/991732.jpg" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
+          <h4 class="font-bold text-lg">Dr. Md Manjur Ahmed</h4>
+          <p class="text-gray-600">Associate Professor</p>
+        </div>
+        <div class="min-w-full p-6 text-center">
+          <img src="https://bu.ac.bd/webform/user_images/861980.png" class="mx-auto rounded-full w-32 h-32 mb-4 object-cover">
+          <h4 class="font-bold text-lg">Dr. Tania Islam</h4>
+          <p class="text-gray-600">Assistant Professor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Highlights -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center mb-10">
+      <h3 class="text-3xl font-bold">Research Highlights</h3>
+      <p class="text-gray-700 mt-2 max-w-2xl mx-auto">Our department is actively involved in AI, cybersecurity, data science, and software engineering research projects.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 container mx-auto px-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-bold text-lg mb-2">AI & Machine Learning</h4>
+        <p class="text-gray-600">Projects exploring deep learning and neural networks.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-bold text-lg mb-2">Cybersecurity</h4>
+        <p class="text-gray-600">Advanced security and cryptography research.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-bold text-lg mb-2">Data Science</h4>
+        <p class="text-gray-600">Big data analytics, visualization, and predictive modeling.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-bold text-lg mb-2">Software Engineering</h4>
+        <p class="text-gray-600">Software design, testing, and process improvement.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- News & Events -->
   <section class="py-12 bg-white">
     <div class="container mx-auto text-center mb-8">
       <h3 class="text-3xl font-bold">Latest News & Events</h3>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 container mx-auto px-6">
       <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-        <img src="https://source.unsplash.com/400x200/?students,seminar" class="w-full rounded mb-4">
+        <span class="text-xs text-blue-700 font-semibold uppercase">Seminar</span>
+        <img src="https://source.unsplash.com/400x200/?students,seminar" class="w-full rounded my-2">
         <h4 class="font-semibold mb-2">AI Seminar</h4>
-        <p class="text-gray-600">Exploring future of Artificial Intelligence.</p>
+        <p class="text-gray-600">Exploring the future of Artificial Intelligence.</p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-        <img src="https://source.unsplash.com/400x200/?conference,tech" class="w-full rounded mb-4">
+        <span class="text-xs text-green-700 font-semibold uppercase">Conference</span>
+        <img src="https://source.unsplash.com/400x200/?conference,tech" class="w-full rounded my-2">
         <h4 class="font-semibold mb-2">Tech Conference</h4>
-        <p class="text-gray-600">Students participated in global conference.</p>
+        <p class="text-gray-600">Students participated in a global conference.</p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-        <img src="https://source.unsplash.com/400x200/?computer,hackathon" class="w-full rounded mb-4">
+        <span class="text-xs text-red-700 font-semibold uppercase">Hackathon</span>
+        <img src="https://source.unsplash.com/400x200/?computer,hackathon" class="w-full rounded my-2">
         <h4 class="font-semibold mb-2">Hackathon 2025</h4>
         <p class="text-gray-600">Innovative solutions presented by BU CSE students.</p>
       </div>
@@ -128,17 +176,34 @@
     <div class="container mx-auto text-center mb-8">
       <h3 class="text-3xl font-bold">Gallery</h3>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container mx-auto px-6">
-      <img src="https://source.unsplash.com/300x200/?university,classroom" class="rounded-lg transform hover:scale-105 transition">
-      <img src="https://source.unsplash.com/300x200/?students,lab" class="rounded-lg transform hover:scale-105 transition">
-      <img src="https://source.unsplash.com/300x200/?graduation,students" class="rounded-lg transform hover:scale-105 transition">
-      <img src="https://source.unsplash.com/300x200/?library,books" class="rounded-lg transform hover:scale-105 transition">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 container mx-auto px-6">
+      <div class="relative overflow-hidden rounded-lg">
+        <img src="https://source.unsplash.com/300x200/?university,classroom" class="w-full h-full object-cover transform hover:scale-105 transition">
+        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition flex items-center justify-center text-white font-semibold">Classroom</div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg">
+        <img src="https://source.unsplash.com/300x200/?students,lab" class="w-full h-full object-cover transform hover:scale-105 transition">
+        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition flex items-center justify-center text-white font-semibold">Lab</div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg">
+        <img src="https://source.unsplash.com/300x200/?graduation,students" class="w-full h-full object-cover transform hover:scale-105 transition">
+        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition flex items-center justify-center text-white font-semibold">Graduation</div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg">
+        <img src="https://source.unsplash.com/300x200/?library,books" class="w-full h-full object-cover transform hover:scale-105 transition">
+        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition flex items-center justify-center text-white font-semibold">Library</div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6 text-center">
     <p>&copy; 2025 University of Barishal - CSE Department. All rights reserved.</p>
+    <div class="flex justify-center mt-2 space-x-4">
+      <a href="#" class="hover:text-yellow-300">Facebook</a>
+      <a href="#" class="hover:text-yellow-300">Twitter</a>
+      <a href="#" class="hover:text-yellow-300">LinkedIn</a>
+    </div>
   </footer>
 
   <!-- JS -->
@@ -159,8 +224,9 @@
     const carousel = document.getElementById("carousel");
     if (carousel) {
       let index = 0;
+      const totalSlides = carousel.children.length;
       setInterval(() => {
-        index = (index + 1) % 4;
+        index = (index + 1) % totalSlides;
         carousel.style.transform = `translateX(-${index * 100}%)`;
       }, 4000);
     }
