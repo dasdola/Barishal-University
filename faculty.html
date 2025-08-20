@@ -5,26 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faculty - University of Barishal CSE</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Toggle mobile menu
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
-  <style>
-    .card-hover:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 25px rgba(0,0,0,0.1);
-    }
-  </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-100 font-sans">
 
   <!-- Navbar -->
-  <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+  <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl md:text-2xl font-bold">University of Barishal - CSE</h1>
+      <!-- Logo + Title -->
+      <div class="flex items-center space-x-3">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.orZUDAJG6n2hIOPvv6OjbQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="BU CSE Logo" class="h-10 w-10 rounded-full">
+        <h1 class="text-xl md:text-2xl font-bold">University of Barishal - CSE</h1>
+      </div>
+
       <!-- Desktop Menu -->
       <nav class="hidden md:flex">
         <ul class="flex space-x-6 text-sm md:text-base">
@@ -61,39 +53,66 @@
   </header>
 
   <!-- Faculty Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto text-center mb-12 px-4">
-      <h3 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Faculty Spotlight</h3>
-      <p class="text-gray-600 text-lg md:text-xl">Meet the brilliant minds behind the CSE Department</p>
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center mb-8">
+      <h3 class="text-3xl font-bold text-blue-900">Faculty Spotlight</h3>
     </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
 
-    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-0">
-      <!-- Faculty Cards (same as previous example) -->
-      <div class="bg-white shadow-lg rounded-xl p-6 text-center transition-transform duration-300 card-hover">
-        <img src="https://bu.ac.bd/webform/user_images/167271.jpg" class="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-blue-200" alt="Dr. Rahat Hossain Faisal">
-        <h4 class="text-xl md:text-2xl font-semibold text-blue-900 mb-1">Dr. Rahat Hossain Faisal</h4>
-        <p class="text-gray-600 mb-2">Associate Professor & Chairman</p>
-        <p class="text-gray-500 text-sm md:text-base mb-3">Specializing in Fuzzy Intelligent Systems, Computational Modeling, and Image Processing.</p>
-        <a href="mailto:rhfaisal@bu.ac.bd" class="inline-block bg-blue-100 text-blue-900 px-4 py-2 rounded-full text-sm hover:bg-blue-200 transition-colors">Contact</a>
+      <!-- Dr. Rahat Hossain Faisal -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://bu.ac.bd/webform/user_images/167271.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Dr. Rahat Hossain Faisal">
+        <h4 class="text-xl font-semibold text-blue-900">Dr. Rahat Hossain Faisal</h4>
+        <p class="text-gray-600">Associate Professor & Chairman</p>
+        <p class="text-gray-500">Specializing in Fuzzy Intelligent Systems, Computational Modeling, and Image Processing.</p>
+        <a href="mailto:rhfaisal@bu.ac.bd" class="text-blue-600 hover:underline">Contact</a>
       </div>
 
-      <div class="bg-white shadow-lg rounded-xl p-6 text-center transition-transform duration-300 card-hover">
-        <img src="https://bu.ac.bd/webform/user_images/991732.jpg" class="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-blue-200" alt="Dr. Md Manjur Ahmed">
-        <h4 class="text-xl md:text-2xl font-semibold text-blue-900 mb-1">Dr. Md Manjur Ahmed</h4>
-        <p class="text-gray-600 mb-2">Associate Professor</p>
-        <p class="text-gray-500 text-sm md:text-base mb-3">Expert in Data Stream Clustering and Computational Intelligence.</p>
-        <a href="mailto:mmahmed@bu.ac.bd" class="inline-block bg-blue-100 text-blue-900 px-4 py-2 rounded-full text-sm hover:bg-blue-200 transition-colors">Contact</a>
+      <!-- Dr. Md Manjur Ahmed -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://bu.ac.bd/webform/user_images/991732.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Dr. Md Manjur Ahmed">
+        <h4 class="text-xl font-semibold text-blue-900">Dr. Md Manjur Ahmed</h4>
+        <p class="text-gray-600">Associate Professor</p>
+        <p class="text-gray-500">Expert in Data Stream Clustering and Computational Intelligence.</p>
+        <a href="mailto:mmahmed@bu.ac.bd" class="text-blue-600 hover:underline">Contact</a>
       </div>
 
-      <div class="bg-white shadow-lg rounded-xl p-6 text-center transition-transform duration-300 card-hover">
-        <img src="https://bu.ac.bd/webform/user_images/IMG-20250608-WA0001.jpg" class="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-blue-200" alt="Md. Erfan">
-        <h4 class="text-xl md:text-2xl font-semibold text-blue-900 mb-1">Md. Erfan</h4>
-        <p class="text-gray-600 mb-2">Assistant Professor</p>
-        <p class="text-gray-500 text-sm md:text-base mb-3">Research interests include Cloud Computing, Mobile Cloud Computing, and IoT.</p>
-        <a href="mailto:merfan@bu.ac.bd" class="inline-block bg-blue-100 text-blue-900 px-4 py-2 rounded-full text-sm hover:bg-blue-200 transition-colors">Contact</a>
+      <!-- Md. Erfan -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://bu.ac.bd/webform/user_images/IMG-20250608-WA0001.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Md. Erfan">
+        <h4 class="text-xl font-semibold text-blue-900">Md. Erfan</h4>
+        <p class="text-gray-600">Assistant Professor</p>
+        <p class="text-gray-500">Research interests include Cloud Computing, Mobile Cloud Computing, and IoT.</p>
+        <a href="mailto:merfan@bu.ac.bd" class="text-blue-600 hover:underline">Contact</a>
       </div>
 
-      <!-- Add the rest of faculty cards as before -->
+      <!-- Md Samsuddoha -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://bu.ac.bd/webform/user_images/445989.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Md Samsuddoha">
+        <h4 class="text-xl font-semibold text-blue-900">Md Samsuddoha</h4>
+        <p class="text-gray-600">Assistant Professor</p>
+        <p class="text-gray-500">Research interests: Machine Learning, Artificial Intelligence, and Data Mining.</p>
+        <a href="mailto:m.samsuddoha@bu.ac.bd" class="text-blue-600 hover:underline">Contact</a>
+      </div>
+
+      <!-- Md. Rashid Al Asif -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://bu.ac.bd/webform/user_images/24973.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Md. Rashid Al Asif">
+        <h4 class="text-xl font-semibold text-blue-900">Md. Rashid Al Asif</h4>
+        <p class="text-gray-600">Assistant Professor</p>
+        <p class="text-gray-500">Specializes in IoT, Cybersecurity, and Edge Computing.</p>
+        <a href="mailto:mraasif@bu.ac.bd" class="text-blue-600 hover:underline">Contact</a>
+      </div>
+
+      <!-- Dr. Tania Islam -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://bu.ac.bd/webform/user_images/861980.png" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Dr. Tania Islam">
+        <h4 class="text-xl font-semibold text-blue-900">Dr. Tania Islam</h4>
+        <p class="text-gray-600">Assistant Professor</p>
+        <p class="text-gray-500">Researches in Cloud Computing, Mobile Cloud Computing, and Machine Learning.</p>
+        <a href="mailto:tania.bd.09@gmail.com" class="text-blue-600 hover:underline">Contact</a>
+      </div>
+
     </div>
   </section>
 
@@ -101,6 +120,14 @@
   <footer class="bg-blue-900 text-white py-6 text-center">
     <p>&copy; 2025 University of Barishal - CSE Department. All rights reserved.</p>
   </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 
 </body>
 </html>
